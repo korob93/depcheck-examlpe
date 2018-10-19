@@ -8,7 +8,8 @@
     "install:dependencies": "cd my-awesome-application && npm i",
     "check:app": "depcheck my-awesome-application",
     "check:package": "depcheck my-awesome-package",
-    "check:app:package": "depcheck my-awesome-application/node_modules/my-awesome-package"
+    "check:app:package": "depcheck my-awesome-application/node_modules/my-awesome-package",
+    "check:app:package:cwd": "cd my-awesome-application/node_modules/my-awesome-package && depcheck"
   },
   "repository": {
     "type": "git",
