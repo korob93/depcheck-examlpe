@@ -1,0 +1,26 @@
+{
+  "name": "depcheck-examlpe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run install:dependencies",
+    "install:dependencies": "cd my-awesome-application && npm i",
+    "check:app": "depcheck my-awesome-application",
+    "check:package": "depcheck my-awesome-package",
+    "check:app:package": "depcheck my-awesome-application/node_modules/my-awesome-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korob93/depcheck-examlpe.git"
+  },
+  "author": "korob93",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korob93/depcheck-examlpe/issues"
+  },
+  "homepage": "https://github.com/korob93/depcheck-examlpe#readme",
+  "devDependencies": {
+    "depcheck": "^0.6.11"
+  }
+}

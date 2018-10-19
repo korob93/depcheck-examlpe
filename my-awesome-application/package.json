@@ -1,0 +1,14 @@
+{
+  "name": "my-awesome-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --preserve-symlinks index.js"
+  },
+  "dependencies": {
+    "my-awesome-package": "file:../my-awesome-package"
+  },
+  "author": "korob93",
+  "license": "ISC"
+}
